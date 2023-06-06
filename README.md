@@ -97,6 +97,7 @@ endmodule
 ```
 
 ## RTL Schematic:
+
 SR flip flop
 <img width="504" alt="sr rtl" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/5d93ea4e-9244-4f2e-9ae5-f8c362a3a2d2">
 
@@ -111,6 +112,7 @@ T flip flop
 
 
 ## Timing Diagram:
+
 SR flip flop
 <img width="924" alt="sr timing" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/b391484f-fd3c-4605-9ae9-fea36066812d">
 
