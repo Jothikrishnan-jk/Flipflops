@@ -58,16 +58,17 @@ endmodule
 ```
 D-flip flop
 ```
-module expdff(d,clk,q,qbar);
+module dff(d,clk,q,qbar);
 input d,clk;
 output reg q;
 output qbar;
-always@(posedge q)
+always@(posedge clk)
 begin
-q=d;
+q=((~q)&d)|(q&d);
 end
 assign qbar=~q;
-endmodule 
+endmodule
+
 ```
 JK-flip flop
 ```
@@ -99,30 +100,39 @@ endmodule
 ## RTL Schematic:
 
 SR flip flop
+
 <img width="504" alt="sr rtl" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/5d93ea4e-9244-4f2e-9ae5-f8c362a3a2d2">
 
 D flip flop
-<img width="576" alt="d flip flop rtl " src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/b64c1e3c-6867-4344-81dd-13e5157e926b">
+
+![image](https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/c49a36ec-4a70-462a-b76c-30bada849548)
 
 JK flip flop
+
 <img width="326" alt="jk rtl" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/00660013-c746-4ebd-8561-21a33c7e038e">
 
 T flip flop
+
 <img width="324" alt="t rtl" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/0a5e2fcf-1333-4487-80ad-6130c784fa60">
 
 
 ## Timing Diagram:
 
 SR flip flop
+
 <img width="924" alt="sr timing" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/b391484f-fd3c-4605-9ae9-fea36066812d">
 
 D flip flop
-<img width="921" alt="d flip flop" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/ac09a793-246e-47d5-a5c0-03c1dafbe4c5">
+
+![image](https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/80e9fe90-6201-48a7-862a-94311d195cd6)
+
 
 JK flip flop
+
 <img width="548" alt="jk waveform" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/1dc25399-57eb-47ea-86dd-2e66a17b26b7">
 
 T flip flop
+
 <img width="575" alt="t wave form" src="https://github.com/Jothikrishnan-jk/Flipflops/assets/129312867/084b6954-83f9-40c4-b3f6-c93b6430ae27">
 
 
